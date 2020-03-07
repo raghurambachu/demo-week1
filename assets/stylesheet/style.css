@@ -1,0 +1,413 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.large-container{
+    width: 1260px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+/* Clearfix */
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+
+/* Typography */
+body{
+    font-family: "Lato",sans-serif;
+    
+}
+
+h1{
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+
+h5{
+    font-size: 18.75px;
+}
+
+
+
+
+/* Header Section */
+header{
+    background-color: #293f50;
+    padding: 20px 0;
+}
+
+header a{
+    color: whitesmoke;
+}
+
+.logo{
+    display: inline-block;
+    width: 300px;
+    color:#648880;
+}
+
+.nav-menu{
+    display: inline-block;
+    width:700px;
+    text-align: right;
+    padding-bottom: 10px;
+    
+}
+
+.nav-menu a{
+    margin-left: 25px;
+    
+}
+
+.selected{
+    color: yellow;
+}
+
+
+/* Hero Section */
+.hero-section{
+    background: #F5F5F5;
+    height: 380px;
+    text-align: center;
+    padding: 50px 0 80px ;
+
+}
+
+
+.hero-section h2{
+    color: #648880;
+}
+
+.hero-content{
+    padding: 50px 75px 20px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.learn-more{
+    display: inline-block;
+    padding: 25px 0;
+}
+
+button{
+    border: 2px solid rgb(97,188,104);
+    background: transparent;
+    padding:15px 30px;
+    border-radius: 3px;
+}
+
+/* Teaser Section */
+.teaser-section{
+    text-align: center;
+    height: 500px;
+    padding: 80px 0 90px;
+    line-height: 1.6;
+}
+
+
+.teaser-section article{
+    display: inline-block;
+    width:30%;
+    
+}
+
+.teaser-section img{
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 1px lightslategrey;
+
+}
+
+
+.article-content{
+    padding: 30px;
+}
+
+
+.teaser-section h3{
+    margin-bottom:10px ;
+    color: #648880;
+}
+
+.teaser-section h5{
+    margin-bottom:5px ;
+}
+
+.trail-with-nature{
+    height: 550px;
+    background: #F5F5F5;
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.trail-with-nature h2{
+    font-size: 35px;
+    color: #648880;
+    margin-bottom: 45px;
+}
+
+.image-container .image{
+    display: inline-block;
+    margin:15px;
+}
+
+.image-container .image img{
+    width: 220px;    
+    height: 150px;
+    box-shadow: 2px 2px 8px 1px lightslategray;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+footer{
+    background: #272727;
+    padding: 35px 0;
+    color: whitesmoke;
+}
+
+.mail-me{
+    padding: 5px;
+    display: inline-block;
+   
+    color:whitesmoke;
+    margin-left: 10px;
+}
+
+
+.footer-left{
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+
+.footer-right{
+    display: inline-block;
+    width:40%;
+    text-align: right;
+}
+
+.footer-right div{
+    display: inline-block;
+   
+}
+
+.footer-right a{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.move-to-top{
+    background: rgb(44,170,225);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/* About Page */
+
+
+.hero-about{
+    background: #F5F5F5;
+    padding: 50px 0;
+
+    
+}
+
+.hero-left-about{
+   /* width: 230px; */
+   /* padding-top: 80px; */
+   display: inline-block;
+   width: 40%;
+   
+    
+}
+.hero-left-about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+  
+
+/* .hero-right-about{
+    width: 50%;
+    display: inline-block;
+    padding-left: 130px;
+    height: 100%;
+    
+    margin-top: 55px;
+    vertical-align: top;
+    border: 1px solid black;
+}
+   
+     */
+.hero-right-about {
+    width: 55%;
+    display: inline-block;
+    
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+.hero-right-about ul{
+    margin-bottom: 150px;
+}
+
+/* .hero-left-about img{
+    width: 230px;
+    height: 230px;
+    width: 100%;
+    border-radius: 50%;
+    display: inline-block;
+   
+
+} */
+
+.small-container{
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+ul{
+    padding-top: 15px;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1.5;
+}
+/* .align {
+    padding-top: 50px;
+} */
+
+.location{
+    background: #C0C0C0	;
+    height: 600px;
+    text-align: center;
+    padding: 65px;
+}
+
+
+.location h2{
+    margin-bottom: 15px;
+}
+
+.iframe{
+    height: 400px;
+}
+
+
+/* Exploration Page  */
+
+
+.col-1-3{
+    width: 33%;
+    float: left;
+}
+
+.week-2{
+    padding:110px 0 75px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.week-2-img img{
+    height: 280px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.week-left{
+    position: relative;
+    left: 75px;
+}
+
+.week-center{
+    position: relative;
+    bottom: 75px;
+}
+
+.week-right{
+    position: relative;
+    right: 75px;
+}
