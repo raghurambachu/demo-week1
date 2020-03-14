@@ -380,7 +380,7 @@ ul{
     float: left;
 }
 
-.week-2{
+.padding{
     padding:110px 0 75px;
     text-align: center;
 }
@@ -390,7 +390,7 @@ h2{
     margin-top: 15px;
 }
 
-.week-2-img img{
+.week-img img{
     height: 280px;
     width: 250px;
     object-fit: cover;
@@ -410,4 +410,8 @@ h2{
 .week-right{
     position: relative;
     right: 75px;
+}
+
+.week-3{
+    padding:200px 0 500px;
 }
